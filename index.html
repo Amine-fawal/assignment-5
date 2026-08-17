@@ -94,5 +94,54 @@ function calculateGrade(sccore) {
         <tr><td>John Smith</td><td>88</td><td>84</td><td>B</td></tr>
     </table>
     <hr/>
+    <h2 id="about">Interactive Form Controls</h2>
+    <label for="username">Full Name (Text Input):</label>
+    <br/>
+    <input type="text" placeholder="John Doe" id="username" name="user_name"/>
+    <br/><br/>
+    <label for="password">Password (Password Input):</label>
+    <br/>
+    <input type="password" id="password" name="user_password"/>
+    <br/><br/>
+    <label for="email">Email Address (Email Input):</label>
+    <br/>
+    <input type="email" id="email" name="user_email" placeholder="student@example.com"/>
+    <br/><br/>
+    <label for="age">Age (Number Input):</label>
+    <br/>
+    <input type="number" id="age" name="user_age" value="20" min="0" max="99"/>
+    <br/><br/>
+    <label for="gender">Gender (Radio Input):</label>
+    <br/>
+    <input type="radio" id="male" checked name="user_gender" value="Male"/>
+    <label for="male">Male</label>
+    <br/>
+    <input type="radio" id="female" checked name="user_gender" value="Female" Female/>
+    <label for="female">Female</label>
+    <br/><br/>
+    <label for="topics">Topics (Checkbox Input):</label>
+    <br/>
+    <input type="checkbox" id="wb" name="user_topic" checked/>
+    <label for="wb">Web Development</label>
+    <br/>
+    <input type="checkbox" id="db" name="user_topic" checked/>
+    <label for="db">Databases</label>
+    <br/><br/>
+    <label for="browser">Preferred Browser (Input List):</label>
+    <br/>
+    <input type="text" name="user_browser" id="browser" list="browser_list"/>
+    <datalist id="browser_list">
+        <option>Chrome</option>
+        <option>Brave</option>
+        <option>Microsoft Edge</option>
+        <option>FireFox</option>
+    </datalist>
+    <br/><br/>
+    <label for="academic_level">Academic Level (select):</label>
+    <br/>
+    <select id="academic_level" name="user_academic_level">
+        <option>Undergraduate</option>
+    </select>
+
 </body>
 </html>
