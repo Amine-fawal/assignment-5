@@ -121,10 +121,10 @@ function calculateGrade(sccore) {
     <br/><br/>
     <label for="topics">Topics (Checkbox Input):</label>
     <br/>
-    <input type="checkbox" id="wb" name="user_topic" checked/>
+    <input type="checkbox" id="wb" name="user_topic"/>
     <label for="wb">Web Development</label>
     <br/>
-    <input type="checkbox" id="db" name="user_topic" checked/>
+    <input type="checkbox" id="db" name="user_topic"/>
     <label for="db">Databases</label>
     <br/><br/>
     <label for="browser">Preferred Browser (Input List):</label>
@@ -133,7 +133,6 @@ function calculateGrade(sccore) {
     <datalist id="browser_list">
         <option>Chrome</option>
         <option>Brave</option>
-        <option>Microsoft Edge</option>
         <option>FireFox</option>
     </datalist>
     <br/><br/>
@@ -141,7 +140,19 @@ function calculateGrade(sccore) {
     <br/>
     <select id="academic_level" name="user_academic_level">
         <option>Undergraduate</option>
+        <option>Postgraduate</option>
+        <option>Doctorate</option>
     </select>
+    <br/>
+    <label for="Feedback">Feedback (Textarea):</label><br/>
+    <textarea id="Feedback" name="feedback" rows="5" cols="50" placeholder="Enter yout feedback here..."></textarea>
+    <br/>
+    <input type="submit" value="Submit Form"/>
+    <input type="reset" value="Reset Form"/><hr/>
+    <footer>
+        <p>&copy; 2026 HTML Assignment Solution. All Rights Reserved.</p>
+        <p><a href="#">Back to Top</a></p>
+    </footer>
 
 </body>
 </html>
